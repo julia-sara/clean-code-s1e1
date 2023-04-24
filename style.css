@@ -1,5 +1,5 @@
 /* Basic Style */
-body {
+.body {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
@@ -35,14 +35,14 @@ body {
 .settingTasks {
   display: flex;
 }
-ul {
+.list {
   margin:0;
   padding: 0px;
 }
-li, h3 {
+.item, .toDo_textForm {
   list-style:none;
 }
-input,button{
+.input, .button{
   outline:none;
 }
 button {
@@ -58,8 +58,8 @@ button:hover {
   color: #3a3A3a;
 }
 /* Heading */
-h3,
-label[for="toDo_textForm__item"] {
+.toDo_textForm,
+.task[for="toDo_textForm__item"] {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -128,21 +128,21 @@ button.delete img:hover {
 }
 
 /* Completed */
-ul#completedTasks label {
+.list#completedTasks label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-ul li input[type=text] {
+.list li input[type=text] {
   display:none;
 }
 
-ul li.editMode input[type=text] {
+.list li.editMode input[type=text] {
   display:inline-block;
   width:224px;
 }
 
-ul li.editMode label {
+.list li.editMode label {
   display:none;
 }

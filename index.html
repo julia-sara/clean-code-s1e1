@@ -9,7 +9,7 @@
     />
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8" />
   </head>
-  <body>
+  <body class="body">
     <div class="about">
       <img src="./eisenhower-matrix.jpg" />
       <a
@@ -20,35 +20,35 @@
     </div>
     <div class="toDo">
       <p id="toDo_textForm">
-        <label for="toDo_textForm__item">Add Item</label>
+        <label class="task" for="toDo_textForm__item">Add Item</label>
       </p>
       <div class="settingTasks">
-        <input id="settingTasks__item" class="task" type="text" /><button>
+        <input id="settingTasks__item" class="input task" type="text" /><button class="button">
           Add
         </button>
       </div>
       <h3 class="toDo_textForm">Todo</h3>
-      <ul id="incompleteTasks">
-        <li>
-          <input type="checkbox" /><label class="task">Pay Bills</label
-          ><input type="text" class="task" /><button class="edit">Edit</button
-          ><button class="delete"><img src="./remove.svg" /></button>
+      <ul class="list" id="incompleteTasks">
+        <li class="item">
+          <input type="checkbox" class="input" /><label class="task">Pay Bills</label
+          ><input type="text" class="input task" /><button class="button edit">Edit</button
+          ><button class="button delete"><img src="./remove.svg" /></button>
         </li>
-        <li class="editMode">
-          <input type="checkbox" /><label class="task">Go Shopping</label
-          ><input type="text" value="Go Shopping" class="task" /><button
-            class="edit"
+        <li class="item editMode">
+          <input type="checkbox" class="input" /><label class="task">Go Shopping</label
+          ><input type="text" value="Go Shopping" class="input task" /><button
+            class="button edit"
           >
             Save</button
-          ><button class="delete"><img src="./remove.svg" /></button>
+          ><button class="button delete"><img src="./remove.svg" /></button>
         </li>
       </ul>
       <h3 class="toDo_textForm">Completed</h3>
-      <ul id="completedTasks">
-        <li>
-          <input type="checkbox" checked /><label class="task"
+      <ul class="list" id="completedTasks">
+        <li class="item">
+          <input type="checkbox" class="input" checked /><label class="task"
             >See the Doctor</label
-          ><input type="text" class="task" /><button class="edit">Edit</button
+          ><input type="text" class="input task" /><button class="edit">Edit</button
           ><button class="delete"><img src="./remove.svg" /></button>
         </li>
       </ul>
