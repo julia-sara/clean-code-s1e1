@@ -16,7 +16,8 @@
   width: 100%;
 }
 
-.about .about_info {
+.about,
+.about_info {
   font-family: fantasy, cursive;
 }
 
@@ -49,11 +50,13 @@
   padding: 0px;
 }
 
-.item, .toDo_textForm {
+.item,
+.toDo_textForm {
   list-style: none;
 }
 
-.input, .button{
+.input,
+.button {
   outline: none;
 }
 
