@@ -32,7 +32,7 @@ body {
   display: inline-block;
   flex-grow: 1;
 }
-.taskRowWrapper {
+.settingTasks {
   display: flex;
 }
 ul {
